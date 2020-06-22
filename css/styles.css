@@ -1,0 +1,88 @@
+body {
+    background-color: #111;
+}
+.header {
+    background-color: #111;
+    display: flex;
+    color: #eee;
+    font-family: 'Alfa Slab One', cursive;
+    height: 50px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 03px;
+}
+
+.header h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.header h5 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.d-block {
+    max-height: 700px;
+    border-radius: 05px;
+}
+
+.cart-menu {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    align-content: center;
+}
+
+.menu {
+    background-color: transparent;
+    border: 0;
+}
+
+.menu :nth-child(1) {
+    color: #fff;
+}
+
+.cards {
+    display: flex;
+    width: 100vw;
+    flex-flow: row;
+}
+
+.card {
+    background-color: #222;
+    text-align: center;
+}
+
+.card img {
+    max-height: 180px;
+}
+
+.card-title {
+    font-family: 'Alfa Slab One', cursive;
+    color: #eee;
+    text-shadow: 02px 02px #111;
+}
+
+.card-text {
+    color: #eee;
+}
+
+.btn {
+    font-family: 'Alfa Slab One', cursive;
+    color: #111;
+}
+
+form {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 05px;
+    text-align: center;
+}
+
+.footer {
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+}

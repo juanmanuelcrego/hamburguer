@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HAMBURGUER - Explicación</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- ESTILOS PROPIOS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col header">
+                <h5><a class="title-page" href="./home.html">Detalle de lo implementado</a></h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4">Detalle de lo implementado</h1>
+                    <p class="lead">Al final de la explicación está el botón para acceder a la página</p>
+                    <hr class="my-4">
+                    <p>Lorena, buenas tardes, paso a explicarte paso por paso lo implementado:</p>
+                    <p>
+                        En primer lugar se implementa bootstrap para utilizar el grid system, para hacerlo
+                        se pega en el META de cada html el link hacia las hojas de estilos de bootstrap. 
+                        Posteriormente se pegan también los scripts de bootstrap en cada html, antes de 
+                        cerrar el body. 
+                    </p>
+                    <p>
+                        Se implementa también Font Awesome para utilizar iconos en el header y en 
+                        algunos botones, más específicamente iconos de carro y de menu.
+                    </p>
+                    <p>
+                        Se implementa Google Fonts para utilizar una fuente diferente a las que están 
+                        por defecto en el sistema operativo, y para no utilizar la Roboto de bootstrap
+                    </p>
+                    <p>Estructura del HTML:</p>
+                    <ul>
+                        <li>01- home.html</li>
+                        <li>BOOTSTRAP</li>
+                        <li>.container que contiene todos los elementos hijos para hacer el grid system</li>
+                        <li>.col .header para utilizar el sistema de columna de bootstrap, además de 
+                            especificar que es un header para trabajarlo en mi hoja de estilos
+                        </li>
+                        <li>HEADER</li>
+                        <li>h5 con título de la web</li>
+                        <li>section class .cart-menu con dos iconos de Font Awesome uno de carro de compras
+                            y otro de menu
+                        </li>
+                        <li>Dentro del menu dos links mediante elementos de tipo 'a' hacia otros html</li>
+                        <li>CAROUSEL</li>
+                        <li>previo a la implementacion del carousel de bootstrap se crea un div con 
+                            la clase .row para especificar que está por fuera del header
+                        </li>
+                        <li>CARDS</li>
+                        <li>Se crea un nuevo row y se hacen cuatro elementos .card de bootstrap
+                            con un div para cada uno.
+                        </li>
+                        <li>FOOTER</li>
+                        <li>Se declara un div con clase .row para contener un div de clase .col .footer
+                            donde coloqué un p con un link a mi página de instagram
+                        </li>
+                        <li></li>
+                        <li>02- about.html</li>
+                        <li>Comparte los mismos parámetros que home.html exceptuando a los cards, carousel
+                            y los links del menu del header se ven modificados.
+                        </li>
+                        <li>Se agrega el .jumbotron para agregar una descripción del clásico 'quienes somos'
+                            que tiene toda web.
+                        </li>
+                        <li></li>
+                        <li>03 - contact.html</li>
+                        <li>Comparte los mismos parámetros que home.html y about.html exceptuando a 
+                            los cards, carousel y jumbotron, además los links del menú del header
+                            se ven modificados.
+                        </li>
+                        <li>Se implementa el .form-row de bootstrap para crear un formulario de 
+                            contacto.
+                        </li>
+                    </ul>
+                    <p>
+                        Se crea una hoja de estilos personalizada en ./css/style.css donde modifiqué 
+                        parámetros como:
+                    </p>
+                    <ul>
+                        <li>1 - HEADER</li>
+                        <li>Fuente de titulo en header</li>
+                        <li>Fuente en los botones</li>
+                        <li>BackgroundColor del body</li>
+                        <li>BackgroundColor del header</li>
+                        <li>Height del header</li>
+                        <li>Se aplica display flex al header para ordenar los elementos hijos</li>
+                        <li>Se modifica el border-radius del header</li>
+                        <li>El carro y el menu están ambos en un mismo div para que el space-between del flex 
+                            del header no los separe entre si.
+                        </li>
+                        <li>Se modifica el padding y margin del h5 del header para evitar el desplazamiento</li>
+                        <li></li>
+                        <li>2 - CAROUSEL</li>
+                        <li>
+                            Se modifica la clase de imagenes d-block del carousel de bootstrap para que 
+                            tengan un height idéntico y no haya desplazamiento, además se les da un border-radius
+                        </li>
+                        <li></li>
+                        <li>3- CARDS</li>
+                        <li>Los elementos card de bootstrap están dentro de un section con nombre de clase
+                            .cards
+                        </li>
+                        <li>Se aplica un display flex al section .cards con un flex-flow row para que los
+                            elementos hijos estén alineados horizontalmente
+                        </li>
+                        <li>Se modifica el BackgroundColor de todos los .card, por defecto bootstrap
+                            los trae en blanco, se modifican por un #222 gris oscuro
+                        </li>
+                        <li>Se alinea el texto de los .card</li>
+                        <li>A cada imagen contenida dentro de los .card se le aplica un max-height
+                            de 180px para que no haya desplazamiento en el tamaño
+                        </li>
+                        <li>A cada .card-title se le modifica la fuente para que esté acorde a la 
+                            estética de la web, como el h5 del header, además se le da un sombreado
+                            y se le especifica como color #eee
+                        </li>
+                        <li>A cada .card-text se le aplica un color #eee, esto modifica el color del
+                            texto de cada .card
+                        </li>
+                        <li></li>
+                        <li>4- BUTTONS</li>
+                        <li>A todos los elementos .btn de bootstrap se les modifica la fuente 
+                            para que estén acorde al estilo de la web. Además se les modifica 
+                            el color de dicha fuente por un #111
+                        </li>
+                        <li></li>
+                        <li>5- FORMS</li>
+                        <li>Se modifica el BackgroundColor del form para que sea claro, específicamente
+                            se utiliza un color #fff
+                        </li>
+                        <li>Se le aplica un padding de 10px al form para que sea más agradable a la vista
+                            y los bordes no queden tan pegados a los elementos hijos
+                        </li>
+                        <li>Se aplica un border-radius al form de 05 px para que esté acorde a otros
+                            elementos de la web que también tienen border-radius, como por ejemplo 
+                            el carousel
+                        </li>
+                        <li>Se centra el texto del form con un text-align: center</li>
+                        <li></li>
+                        <li>6- FOOTER</li>
+                        <li>Se centra el texto del footer, además de darle un color blanco al texto, por 
+                            último se le aplica un padding-top para alejarlo un poco de los demás elementos.
+                        </li>
+                    </ul>
+                    <a class="btn btn-warning btn-lg" href="./home.html" role="button">Ir a la pagina</a>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col footer">
+                <p>Powered by <a href="www.instagram.com/jcrego.css">Juan Manuel Crego</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FONT AWESOME  -->
+    <script src="https://kit.fontawesome.com/187c7953cf.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

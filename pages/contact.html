@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>HAMBURGUER - about</title>
+    <title>HAMBURGUER - contacto</title>
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- ESTILOS PROPIOS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 </head>
@@ -24,7 +24,7 @@
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                         <a class="dropdown-item" type="button" href="./home.html">Home</a>
-                        <a class="dropdown-item" type="button" href="./contact.html">Contacto</a>
+                        <a class="dropdown-item" type="button" href="./about.html">About</a>
                         </div>
                     </div>
                 </section>
@@ -32,17 +32,33 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="jumbotron">
-                    <h1 class="display-4">¿Quienes somos?</h1>
-                    <p class="lead">Breve descripción de nuestro emprendimiento.</p>
-                    <hr class="my-4">
-                    <p>HAMBURGUER nació como un emprendimiento en el año 2008, con la idea clara de 
-                        brindarle al cliente una degustación de primera calidad, por lo que nos propusimos
-                        cocinar nuestras hamburguesas con una receta casera simple y consistente. nuestro
-                        crecimiento fue tan exitoso que hoy en día contamos con 20 HAMBURGUERS en la provincia
-                        de Buenos Aires.</p>
-                    <a class="btn btn-warning btn-lg" href="./contact.html" role="button">Contactanos</a>
-                  </div>
+                <form>
+                    <h2>Contactanos!</h2>
+                    <h5>A la brevedad nos pondremos en contacto con vos!</h5>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputNombre">Nombre</label>
+                        <input type="text" class="form-control" id="inputNombre">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputApellido">Apellido</label>
+                        <input type="text" class="form-control" id="inputApellido">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputMail">e-mail</label>
+                      <input type="email" class="form-control" id="inputMail" placeholder="@">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPhone">Teléfono</label>
+                      <input type="tel" class="form-control" id="inputPhone" placeholder="+54">
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <textarea class="form-control" id="asunto" rows="3"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-warning">Enviar</button>
+                  </form>
             </div>
         </div>
         <div class="row">
